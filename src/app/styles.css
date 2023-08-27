@@ -7,17 +7,21 @@
 *::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
 }
+
 html,
 body {
   height: 100%;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 img,
 picture,
 video,
@@ -26,12 +30,14 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
+
 p,
 h1,
 h2,
@@ -41,6 +47,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 #root,
 #__next {
   isolation: isolate;
@@ -57,6 +64,7 @@ body {
   background: hsl(0deg 0% 95%);
   color: hsl(0deg 0% 10%);
 }
+
 main {
   width: 100%;
   max-width: 800px;
@@ -66,10 +74,26 @@ main {
   border-radius: 2px;
   background: white;
 }
+
 footer {
   width: 100%;
+  margin-top: auto;
   font-size: 0.875rem;
   color: hsl(0deg 0% 30%);
   text-align: center;
   padding: 32px 0px;
+  border-top: 1px dashed hsl(0deg 0% 80%);
+}
+
+button {
+  border: none;
+  padding: 0px;
+  background: transparent;
+  cursor: pointer;
+  transition: filter 200ms;
+  font-weight: bold;
+}
+
+.censored {
+  filter: blur(4px);
 }
